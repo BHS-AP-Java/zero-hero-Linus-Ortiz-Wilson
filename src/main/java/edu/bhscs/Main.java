@@ -15,7 +15,8 @@ package edu.bhscs;
 public class Main {
 
   // Fields and Properties
-  public static void main(String[] args) {
+
+  public void main(String[] args) {
 
     new Burger().draw();
     System.out.println("burger");
