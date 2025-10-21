@@ -5,9 +5,9 @@
 
 /*
  * DESCRIPTION: Have a cake that can be different and be purchased (very inefficiently)
- * INPUT: What frosting and cake do you want?
- * OUTPUT: Is the cake for you
- * EDGE CASE: Is the cake satisfactory
+ * INPUT: How big of a burger!
+ * OUTPUT: ASCII art buger of desired size
+ * EDGE CASE: Is the burger beautiful and satisfactory
  */
 
 package edu.bhscs;
@@ -20,12 +20,21 @@ public class Main {
 
     Player user = new Player("Usario P. Player");
 
-    String name = user.giveAnswer("What is your name?");
-    String age = user.giveAnswer("How old are you?");
+    String name = user.giveAnswer("What do you want to call your burger");
+    String awesomeness  = user.giveAnswer("How awesome is the burger");
+    int size = user.giveAnswerInt("How big of a cake do you want (in numerical value)");
 
-    new Burger().draw(12); // name, age);
+    new Burger().draw(size);   //name, age);
 
     System.out.println(name);
-    System.out.println(age);
+    System.out.println(awesomeness);
   }
+
 }
+
+
+
+
+
+
+
