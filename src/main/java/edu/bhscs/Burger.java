@@ -16,15 +16,12 @@ public class Burger {
   String buns = "";
   String lettuce = "";
 
-
   // Constructor(s)
   public Burger() {}
 
   // Method(s)
 
-  public void burger(String[] args) {
-    Player.player()
-
+  public void burger(String[] args) {}
 
   void burgerSize(int size) {
     for (int i = 0; i < size; i++) {
@@ -39,24 +36,22 @@ public class Burger {
         buns += ".";
       }
 
-      //Random to do lettuce
+      // Random to do lettuce
       rand = (int) (Math.random() * 3 + 1);
       System.out.println(rand);
       if (rand == 1) {
         lettuce += "/";
-      }
-
-      else if (rand == 2) {
+      } else if (rand == 2) {
         lettuce += "|";
-      }
-
-      else;{
+      } else
+        ;
+      {
         lettuce += "\\";
       }
     }
   }
 
-  void draw() {
+  void draw(int size) {
     System.out.println("I\'m drawing a burger");
     burgerSize(size);
 

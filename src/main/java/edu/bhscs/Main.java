@@ -16,15 +16,16 @@ public class Main {
 
   // Fields and Properties
 
-  public void main(String[] args) {
+  public static void main(String[] args) {
 
-    new Burger().draw();
-    System.out.println("burger");
+    Player user = new Player("Usario P. Player");
+
+    String name = user.giveAnswer("What is your name?");
+    String age = user.giveAnswer("How old are you?");
+
+    new Burger().draw(12); // name, age);
+
+    System.out.println(name);
+    System.out.println(age);
   }
-
-
-
-
-
-
 }
