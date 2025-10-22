@@ -20,14 +20,14 @@ public class Main {
 
     Player user = new Player("Usario P. Player");
 
-    String name = user.giveAnswer("What do you want to call your burger");
-    String awesomeness  = user.giveAnswer("How awesome is the burger");
-    int size = user.giveAnswerInt("How big of a cake do you want (in numerical value)");
+    //String name = user.giveAnswer("What do you want to call your burger");
+    //String awesomeness  = user.giveAnswer("How awesome is the burger");
+    int size = user.giveAnswerInt("How big of a burger do you want (in numerical value)");
 
     new Burger().draw(size);   //name, age);
 
-    System.out.println(name);
-    System.out.println(awesomeness);
+    //System.out.println(name);
+    //System.out.println(awesomeness);
   }
 
 }

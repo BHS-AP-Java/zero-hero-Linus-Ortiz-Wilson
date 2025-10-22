@@ -12,7 +12,6 @@ public class Player {
   String name;
   Scanner s;
 
-
   // Constructor(s)
   public Player(String name) {
 
@@ -34,15 +33,13 @@ public class Player {
 
     System.out.println(question);
     return s.nextLine();
-  };
-
+  }
+  ;
 
   public int giveAnswerInt(String question) {
 
     System.out.println(question);
     return s.nextInt();
-  };
-
-
-
+  }
+  ;
 }
