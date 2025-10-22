@@ -18,16 +18,23 @@ public class Main {
 
   public static void main(String[] args) {
 
-    Player user = new Player("Usario P. Player");
+    System.out.println("                 _______________________________");
+    System.out.println("/////////////////  Welcome to Burger Master!!   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\");
+    System.out.println();
+    System.out.println();
+    System.out.println();
 
-    //String name = user.giveAnswer("What do you want to call your burger");
-    //String awesomeness  = user.giveAnswer("How awesome is the burger");
+
+
+    Player user = new Player("Burgermaster");
+
+    String name = user.giveAnswer("What do you want to call your burger");
     int size = user.giveAnswerInt("How big of a burger do you want (in numerical value)");
-    
+
     new Burger().draw(size);   //name, age);
 
-    //System.out.println(name);
-    //System.out.println(awesomeness);
+    System.out.println(name);
+
   }
 
 }

@@ -25,7 +25,7 @@ public class Burger {
   void burgerSize(int size) { //Tells the draw method how much stuff is in the burger
     //Burger content loop (except lettuce)
 
-    // Decides height based on size
+    // Decides height of burger based on size
     if (size <= 20) {
       height = 1;
     }
