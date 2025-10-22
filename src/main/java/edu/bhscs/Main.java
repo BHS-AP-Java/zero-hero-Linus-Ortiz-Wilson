@@ -18,8 +18,8 @@ public class Main {
 
   public static void main(String[] args) {
 
-    System.out.println("                 _______________________________");
-    System.out.println("/////////////////  Welcome to Burger Master!!   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\");
+    System.out.println("                 ________________________________");
+    System.out.println("/////////////////   Welcome to Burger Master!!   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\");
     System.out.println();
     System.out.println();
     System.out.println();
@@ -31,7 +31,7 @@ public class Main {
     String name = user.giveAnswer("What do you want to call your burger");
     int size = user.giveAnswerInt("How big of a burger do you want (in numerical value)");
 
-    new Burger().draw(size);   //name, age);
+    new Burger().draw(size);
 
     System.out.println(name);
 
