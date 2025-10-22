@@ -34,8 +34,9 @@ public class Burger {
       } else if (((int) (Math.random() * 15 + 1)) > 9 || ((int) (Math.random() * 15 + 1)) <= 12) {
         buns += ".";
       }
+     }
 
-
+     for (int i = 0; i < size*1.15; i++) {
       // Random to do lettuce
       rand = (int) (Math.random() * 3 + 1);
       System.out.println(rand);
