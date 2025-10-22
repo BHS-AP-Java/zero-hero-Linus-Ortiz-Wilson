@@ -23,7 +23,7 @@ public class Main {
     //String name = user.giveAnswer("What do you want to call your burger");
     //String awesomeness  = user.giveAnswer("How awesome is the burger");
     int size = user.giveAnswerInt("How big of a burger do you want (in numerical value)");
-
+    
     new Burger().draw(size);   //name, age);
 
     //System.out.println(name);

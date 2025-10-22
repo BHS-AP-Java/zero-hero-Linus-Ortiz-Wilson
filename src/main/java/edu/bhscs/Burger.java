@@ -8,7 +8,7 @@ package edu.bhscs;
 public class Burger {
   // Propertie(s) and Field(s)
   Boolean hasCheese;
-  int weight;
+  int height;
   int size;
   int rand;
   String underLine = "";
@@ -22,7 +22,19 @@ public class Burger {
   // Method(s)
 
 
-  void burgerSize(int size) {
+  void burgerSize(int size) { //Tells the draw method how much stuff is in the burger
+    //Burger content loop (except lettuce)
+
+    // Decides height based on size
+    if (size <= 20) {
+      height = 1;
+    }
+
+    else{
+    height = size / 20;
+    }
+
+
     for (int i = 0; i < size; i++) {
       underLine += "_";
       paddy += "|";
@@ -36,7 +48,8 @@ public class Burger {
       }
      }
 
-     for (int i = 0; i < size*1.15; i++) {
+     //Lettuce loop
+     for (int i = 0; i < size*1.14; i++) {
       // Random to do lettuce
       rand = (int) (Math.random() * 3 + 1);
       System.out.println(rand);
@@ -56,13 +69,17 @@ public class Burger {
   void draw(int size) {
     burgerSize(size);
 
+
     System.out.println("I'm drawing a burger");
     System.out.println("  " + underLine + "  ");
     System.out.println(" /" + buns + "\\");
-    System.out.println(" (" + paddy + ") ");
-    System.out.println(lettuce);
-    System.out.println("__" + underLine + "__");
-    System.out.println(" \\" + underLine + "/");
+
+    for (int i = 0; i < height; i++ ){//draws the good stuff in the burger
+      System.out.println(" (" + paddy + ") ");
+      System.out.println(lettuce);
+      System.out.println("__" + underLine + "__");
+    }
+      System.out.println(" \\" + underLine + "/");
     System.out.println(size);
   }
 }
