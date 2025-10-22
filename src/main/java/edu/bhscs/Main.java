@@ -30,8 +30,11 @@ public class Main {
 
     String name = user.giveAnswer("What do you want to call your burger");
     int size = user.giveAnswerInt("How big of a burger do you want (in numerical value)");
+    int height = user.giveAnswerInt("How many patties do you want on your buger?");
 
-    new Burger().draw(size);
+
+
+    new Burger().draw(size,height);
 
     System.out.println(name);
 

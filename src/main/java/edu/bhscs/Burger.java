@@ -23,16 +23,6 @@ public class Burger {
 
 
   void burgerSize(int size) { //Tells the draw method how much stuff is in the burger
-    //Burger content loop (except lettuce)
-
-    // Decides height of burger based on size
-    if (size <= 20) {
-      height = 1;
-    }
-
-    else{
-    height = size / 20;
-    }
 
 
     for (int i = 0; i < size; i++) {
@@ -66,7 +56,7 @@ public class Burger {
     }
   }
 
-  void draw(int size) {
+  void draw(int size, int height) {
     burgerSize(size);
 
 
@@ -80,6 +70,5 @@ public class Burger {
       System.out.println("__" + underLine + "__");
     }
       System.out.println(" \\" + underLine + "/");
-    System.out.println(size);
   }
 }
