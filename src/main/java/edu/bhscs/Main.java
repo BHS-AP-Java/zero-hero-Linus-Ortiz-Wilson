@@ -1,10 +1,10 @@
 // Linus Ortiz
 // P2
 // Zero Hero
-// 9/19/2025
+// 10/22/2025
 
 /*
- * DESCRIPTION: Have a cake that can be different and be purchased (very inefficiently)
+ * DESCRIPTION: Have a burger that the user chooses stuff about!
  * INPUT: How big of a burger!
  * OUTPUT: ASCII art buger of desired size
  * EDGE CASE: Is the burger beautiful and satisfactory
