@@ -19,12 +19,11 @@ public class Main {
   public static void main(String[] args) {
 
     System.out.println("                 ________________________________");
-    System.out.println("/////////////////   Welcome to Burger Master!!   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\");
+    System.out.println(
+        "/////////////////   Welcome to Burger Master!!   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\");
     System.out.println();
     System.out.println();
     System.out.println();
-
-
 
     Player user = new Player("Burgermaster");
 
@@ -32,19 +31,8 @@ public class Main {
     int size = user.giveAnswerInt("How big of a burger do you want (in numerical value)");
     int height = user.giveAnswerInt("How many patties do you want on your buger?");
 
-
-
-    new Burger().draw(size,height);
+    new Burger().draw(size, height);
 
     System.out.println(name);
-
   }
-
 }
-
-
-
-
-
-
-
