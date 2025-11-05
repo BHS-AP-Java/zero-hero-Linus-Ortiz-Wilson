@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "App$Main",
+      "request": "launch",
+      "mainClass": "edu.bhscs.App$Main",
+      "projectName": "ap-java-starter"
+    },
+    {
+      "type": "java",
       "name": "Date10_27$Main",
       "request": "launch",
       "mainClass": "edu.bhscs.Date10_27$Main",

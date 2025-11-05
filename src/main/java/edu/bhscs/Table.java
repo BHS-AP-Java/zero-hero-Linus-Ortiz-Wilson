@@ -8,9 +8,17 @@ public class Table {
 
   // Constructor
   public Table(int legs, int width) {
-
     this.legs = legs;
     this.width = width;
     System.out.println("livin");
   }
+
+  public void draw() {
+    System.out.println("Smiley face");
+  }
+
+
+
+
+
 }
