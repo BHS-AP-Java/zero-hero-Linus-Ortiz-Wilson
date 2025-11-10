@@ -4,27 +4,17 @@ public class Cake {
   // Fields and Properties
   String name;
   int size;
-
-
-
+  Cake bDay;
 
   // Constructor
   public Cake(int size, String name) {
-    this.size = size;
     this.name = name;
-    System.out.println("Cake exists");
   }
-
 
   // Method(s)
   public void draw(Table t) {
-    this.draw(t);
-    t.draw();
+    // this.draw(t);
 
     System.out.println("Table");
   }
-
-
-
-
 }

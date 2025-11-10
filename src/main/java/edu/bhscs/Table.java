@@ -13,12 +13,8 @@ public class Table {
     System.out.println("livin");
   }
 
+  // Method(s)
   public void draw() {
     System.out.println("Smiley face");
   }
-
-
-
-
-
 }
